@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#hero" className="font-playfair text-xl font-bold">
-              Voice<span className="text-narrator-purple">Artistry</span>
+              Olivia<span className="text-narrator-purple">King</span>
             </a>
             <p className="text-sm text-white/60 mt-2">Professional Audiobook Narration</p>
           </div>
