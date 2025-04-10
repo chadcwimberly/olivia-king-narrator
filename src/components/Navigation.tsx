@@ -44,7 +44,7 @@ const Navigation = () => {
     >
       <div className="container-wide flex items-center justify-between py-4">
         <a href="#hero" className="font-playfair text-xl md:text-2xl font-bold text-narrator-darkGray">
-          Voice<span className="text-narrator-purple">Artistry</span>
+          Olivia<span className="text-narrator-purple">King</span>
         </a>
 
         {/* Desktop Navigation */}

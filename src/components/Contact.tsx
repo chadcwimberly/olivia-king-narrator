@@ -4,7 +4,8 @@ import { Mail, Phone, MessageSquare, SendHorizontal, Loader2 } from 'lucide-reac
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/components/ui/use-toast';
+import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -21,24 +22,42 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message received!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+    try {
+      // Call the Supabase edge function to send the email
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
       });
-      setIsSubmitting(false);
+      
+      if (error) {
+        throw new Error(error.message);
+      }
+      
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out. Olivia will get back to you soon.",
+      });
+      
+      // Reset the form
       setFormData({
         name: '',
         email: '',
         subject: '',
         message: ''
       });
-    }, 1500);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast({
+        title: "Message failed to send",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -56,8 +75,8 @@ const Contact = () => {
                   <Mail className="mr-3" size={20} />
                   <div>
                     <p className="text-sm opacity-80">Email</p>
-                    <a href="mailto:emma@voiceartistry.com" className="hover:underline">
-                      emma@voiceartistry.com
+                    <a href="mailto:contact@oliviaking.com" className="hover:underline">
+                      contact@oliviaking.com
                     </a>
                   </div>
                 </div>
