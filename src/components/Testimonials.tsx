@@ -41,7 +41,7 @@ const Testimonials = () => {
       <div className="container-narrow">
         <h2 className="section-title">What People Say</h2>
 
-        <div className="relative bg-white rounded-lg shadow-lg p-8 md:p-12">
+        <div className="relative bg-white rounded-lg shadow-lg p-8 md:p-12 overflow-hidden">
           <Quote className="text-narrator-purple/20 absolute top-6 left-6" size={60} />
           
           <div className="relative z-10">

@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-white/60">
-              © {currentYear} VoiceArtistry. All rights reserved.
+              © {currentYear} Olivia King. All rights reserved.
             </p>
             
             <div className="flex space-x-6 mt-4 md:mt-0">

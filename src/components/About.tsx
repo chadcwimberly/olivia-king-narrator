@@ -28,7 +28,7 @@ const About = () => {
           <div className="md:w-3/5">
             <div className="flex items-center gap-2 mb-4">
               <Mic className="text-narrator-purple" />
-              <h3 className="font-playfair text-xl">Emma Richardson</h3>
+              <h3 className="font-playfair text-xl">Olivia King</h3>
             </div>
             
             <p className="mb-6 text-narrator-darkGray/90">
