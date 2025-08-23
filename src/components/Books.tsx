@@ -167,7 +167,7 @@ const Books = () => {
                         <Button 
                           variant="outline" 
                           size="sm"
-                          className="ml-2"
+                          className=""
                           onClick={() => window.open(book.ref, '_blank')}
                         >
                           Listen on Audible

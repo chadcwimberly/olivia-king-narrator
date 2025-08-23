@@ -8,22 +8,54 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Michael Thompson",
-      role: "Author of 'The Lost Key'",
-      quote: "Olivia brought my characters to life in ways I never imagined possible. Her narration added depth and emotion that enhanced the entire story. Working with her was a pleasure, and I couldn't be happier with the final audiobook.",
+      name: "IonyWinter",
+      quote: "Olivia King?! Phenomenal! Give her a Grammy! She has an impressive range and reads with the perfect amount of emotion. She’s not reading us this book, she's acting it out. I'm so happy she narrated this! She really went above and beyond.",
     },
     {
       id: 2,
-      name: "Jennifer Lee",
-      role: "Publisher, Horizon Audio",
-      quote: "Professional, punctual, and incredibly talented. Olivia consistently delivers high-quality narration that receives excellent reviews from listeners. She's our go-to narrator for fiction titles that require emotional range and engaging storytelling.",
+      name: "Sarah C",
+      quote: "Olivia King is incredible!! Omgosh She brings SO much emotion and life to an already amazing story. She is very talented and you can tell she loves what she does. Highly recommend anything by her! 💙💙",
     },
     {
       id: 3,
-      name: "Robert Chen",
-      role: "Author of 'Beyond the Veil'",
-      quote: "The way Olivia captured the essence of my fantasy world was remarkable. Each character had a distinct voice that matched my vision perfectly. The audiobook has received countless compliments specifically about the narration.",
+      name: "Stephanie L",
+      quote: "I loved hearing the different characters (and accents!) come to life in this beautiful production!",
     },
+    {
+      id: 4,
+      name: "A. Justus",
+      quote: "From the beginning until the very end I could hardly stop listening.",
+    },
+    {
+      id: 5,
+      name: "Stone",
+      quote: "Narrator is fantastic as always. in fact, I only stumbled upon this series looking for more book she's read!",
+    },
+    {
+      id: 6,
+      name: "Brooke F",
+      quote: "Olivia is such a good narrator! This story is great, but she added to it with her narration!",
+    },
+    {
+      id: 7,
+      name: "Colleen K",
+      quote: "[Olivia] is the best female narrator I have ever listened to on audible. Her voice range and accents are nothing short of superb."
+    },
+    {
+      id: 8,
+      name: "",
+      quote: "Olivia king was incredible and perfectly suited for the heroine voice! I did not want to stop, not even to sleep. Will be listening to more from this author and narrator! Loved!!!!!"
+    },
+    {
+      id: 9,
+      name: "Dupree F",
+      quote: "Probably the best narration I've ever listen to."
+    },
+    {
+      id: 10,
+      name: "Dee Z",
+      quote: "Olivia King's narration is perfection."
+    }
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -59,14 +91,13 @@ const Testimonials = () => {
                 style={{ position: index === activeIndex ? 'relative' : 'absolute' }}
               >
                 <div className="flex flex-col items-center text-center">
-                  <p className="italic text-narrator-darkGray/80 mb-6 max-w-2xl">
-                    "{testimonial.quote}"
-                  </p>
-                  
                   <div>
-                    <h4 className="font-playfair font-bold text-lg">{testimonial.name}</h4>
-                    <p className="text-sm text-narrator-lightGray">{testimonial.role}</p>
+                    <h4 className="font-playfair font-bold text-lg">{testimonial.quote}</h4>
+                    {/* <p className="text-sm text-narrator-lightGray">{testimonial.role}</p> */}
                   </div>
+                  <p className="italic text-narrator-darkGray/80 mb-6 max-w-2xl">
+                    "{testimonial.name}"
+                  </p>
                 </div>
               </div>
             ))}
