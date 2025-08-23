@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section bg-narrator-beige/40">
+    <section id="contact" className="section bg-white animate-fade-in">
       <div className="container-narrow">
         <h2 className="section-title">Get In Touch</h2>
         
