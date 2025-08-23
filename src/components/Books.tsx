@@ -183,7 +183,10 @@ const Books = () => {
         </div>
         
         <div className="flex justify-center mt-8">
-          <Button className="bg-narrator-purple hover:bg-narrator-purple/80 text-white" ref="https://www.audible.com/search?ref=a_search_c3_lNarrator_1_5_1&searchNarrator=Olivia+King&page=1">
+          <Button 
+            className="bg-narrator-purple hover:bg-narrator-purple/80 text-white"
+            onClick={() => window.open('https://www.audible.com/search?ref=a_search_c3_lNarrator_1_5_1&searchNarrator=Olivia+King&page=1', '_blank')}
+          >
             View My Complete Portfolio
           </Button>
         </div>
