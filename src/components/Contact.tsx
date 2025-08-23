@@ -14,7 +14,6 @@ const Contact = () => {
             </h3>
             
             <p className="text-narrator-lightGray mb-8 text-lg leading-relaxed">
-              Contact me for rates, availability, or to request a custom demo tailored to your project. 
               I'd love to help you create an unforgettable audiobook experience.
             </p>
             
