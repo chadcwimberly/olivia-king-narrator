@@ -8,7 +8,7 @@ const Contact = () => {
         <h2 className="section-title">Get In Touch</h2>
         
         <div className="text-center max-w-2xl mx-auto">
-          <div className="bg-white rounded-lg shadow-lg p-12">
+          <div className="bg-narrator-cream rounded-lg shadow-lg p-12">
             <h3 className="font-playfair text-2xl font-bold mb-6 text-narrator-darkGray">
               Ready to bring your story to life?
             </h3>
