@@ -45,25 +45,25 @@ const Testimonials = () => {
     {
       id: 7,
       name: "Colleen K",
-      quote: "[Olivia] is the best female narrator I have ever listened to on audible. Her voice range and accents are nothing short of superb."
+      quote: "[Olivia] is the best female narrator I have ever listened to on audible. Her voice range and accents are nothing short of superb.",
       role: ""
     },
     {
       id: 8,
       name: "",
-      quote: "Olivia king was incredible and perfectly suited for the heroine voice! I did not want to stop, not even to sleep. Will be listening to more from this author and narrator! Loved!!!!!"
+      quote: "Olivia king was incredible and perfectly suited for the heroine voice! I did not want to stop, not even to sleep. Will be listening to more from this author and narrator! Loved!!!!!",
       role: ""
     },
     {
       id: 9,
       name: "Dupree F",
-      quote: "Probably the best narration I've ever listen to."
+      quote: "Probably the best narration I've ever listen to.",
       role: ""
     },
     {
       id: 10,
       name: "Dee Z",
-      quote: "Olivia King's narration is perfection."
+      quote: "Olivia King's narration is perfection.",
       role: ""
     }
   ];
