@@ -11,7 +11,8 @@ const Books = () => {
       author: "R. Raeta",
       genre: "Historical Fantasy",
       coverImage: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&q=80",
-      description: "A description"
+      description: "Both epic and intimate, These Immortal Truths is a powerful and romantic historical fantasy that explores not only what it means to live forever, but what it means to live fully.",
+      ref: "https://www.audible.com/pd/These-Immortal-Truths-Audiobook/B0DZD8KTBR"
     },
     {
       id: 2,
@@ -19,7 +20,8 @@ const Books = () => {
       author: "Robin D. Mahle and Elle Madison",
       genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1531501410720-c8d437636169?w=600&q=80",
-      description: ""
+      description: "A reckless princess, captured by her enemy, must navigate dangerous politics and a forbidden love she never wanted in order to survive.",
+      ref: "https://www.audible.com/pd/Rowan-Audiobook/B0BS1VBBV8"
     },
     {
       id: 3,
@@ -27,15 +29,17 @@ const Books = () => {
       author: "Olivia Wildenstein",
       genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1629992101753-56d196c8aabb?w=600&q=80",
-      description: ""
+      description: "A magicless halfling beloved by the prince but hated by the court is sent on an adventure by an oracle that releases a winged demon into the world. Is it really a demon, or is it her salvation?",
+      ref: "https://www.audible.com/pd/House-of-Beating-Wings-Audiobook/B0BTG9HH35"
     },
     {
       id: 4,
-      title: "Shadow of a Crown",
+      title: "Shadows of a Crown",
       author: "M. Lynn and Melissa A. Craven",
       genre: "Fantasy",
       coverImage: "https://images.unsplash.com/photo-1518744386442-2d48ac47a7eb?w=600&q=80",
-      description: ""
+      description: "A princess and her guards, and an orphan and her best friend, who are all unaware of their key roles in an ancient prophecy, must embark on a dangerous journey to save their world from destruction.",
+      ref: "https://www.audible.com/pd/Shadows-of-a-Crown-Audiobook/B0FG5HBPF2"
     },
     {
       id: 5,
@@ -43,7 +47,8 @@ const Books = () => {
     author: "Robin D. Mahle and Elle Madison",
       genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&q=80",
-      description: ""
+      description: "Princess Charlotte's entire life had been planned. Right up until the moment her fiancé is kidnapped on her wedding day, sending the entire kingdom hurtling toward disaster.",
+      ref: "https://www.audible.com/pd/The-Lochlann-Treaty-Complete-Series-Audiobook/B0B4V9QRSZ"
     },
     {
       id: 6,
@@ -51,7 +56,8 @@ const Books = () => {
       author: "Courtney Thorne",
       genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1589998059171-988d887df646?w=600&q=80",
-      description: ""
+      description: "Gifted with the elements of all five kingdoms, Aurelia had never known a minute of peace. No Virium was ever meant to hold all five elements, and now they war inside her, keeping her from rest.",
+      ref: "https://www.audible.com/pd/Sleep-and-Spirit-Audiobook/B0CPH24LRF"
     },
     {
       id: 7,
@@ -59,7 +65,8 @@ const Books = () => {
       author: "M. Lynn and Melissa A. Craven",
       genre: "Romantasy",
       coverImage: "",
-      description: ""
+      description: "A human girl with a troubled past. A fae prince from a stolen kingdom. When he whisks her away to the fae realm, there is no going back to her old life.",
+      ref: "https://www.audible.com/pd/Queens-of-the-Fae-Books-1-3-Audiobook/B09D4NGKDF"
     },
     {
       id: 8,
@@ -67,7 +74,8 @@ const Books = () => {
       author: "Jae Dawson",
       genre: "Romance",
       coverImage: "",
-      description: ""
+      description: "Will a high school music teacher and an indie rock star find their harmony in this small-town holiday romance?",
+      ref: "https://www.audible.com/pd/Moonlight-and-Belladonna-Audiobook/B09DM8HWFW"
     },
     {
       id: 9,
@@ -75,7 +83,8 @@ const Books = () => {
       author: "Robin D. Mahle and Elle Madison",
       genre: "Romantasy",
       coverImage: "",
-      description: ""
+      description: "Galina has been looking for a way out. So when she has the chance to break free of her kingdom and the man who wants to own her, she has no choice but to see it through.",
+      ref: "https://www.audible.com/pd/The-Lochlann-Deception-Complete-Series-Audiobook/B0D96V61ZK"
     },
     {
       id: 10,
@@ -83,7 +92,8 @@ const Books = () => {
       author: "Jesikah Sundin",
       genre: "Romantasy",
       coverImage: "",
-      description: ""
+      description: "Princess Æroreh Rosen was faerie blessed before her birth. To promote the New Dawn Era, the Queen coded her daughter with every feminine perfection.",
+      ref: "https://www.audible.com/pd/Of-Dreams-and-Shadows-Audiobook/B08JTWDYX9"
     },
     {
       id: 11,
@@ -91,7 +101,8 @@ const Books = () => {
       author: "Claire Luana",
       genre: "Urban Fantasy",
       coverImage: "",
-      description: ""
+      description: "An unsolved murder. A shadowy nemesis. A team of supernatural heroes determined to find the truth.",
+      ref: "https://www.audible.com/pd/Mythical-Alliance-Phoenix-Team-Audiobook/B09YWM1PLH"
     }
   ];
 
