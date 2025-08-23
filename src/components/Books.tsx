@@ -164,18 +164,14 @@ const Books = () => {
                       <p className="text-sm text-narrator-lightGray mb-3">By {book.author}</p>
                       <p className="text-narrator-darkGray/80 text-sm mb-4">{book.description}</p>
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center text-narrator-purple">
-                          <Bookmark size={16} className="mr-2" />
-                          <span className="text-sm">Available on Audible</span>
-                        </div>
                         <Button 
                           variant="outline" 
                           size="sm"
                           className="ml-2"
                           onClick={() => window.open(book.ref, '_blank')}
                         >
+                          Listen on Audible
                           <ExternalLink size={14} className="mr-1" />
-                          Listen
                         </Button>
                       </div>
                     </div>
