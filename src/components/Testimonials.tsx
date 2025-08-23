@@ -10,51 +10,61 @@ const Testimonials = () => {
       id: 1,
       name: "IonyWinter",
       quote: "Olivia King?! Phenomenal! Give her a Grammy! She has an impressive range and reads with the perfect amount of emotion. She’s not reading us this book, she's acting it out. I'm so happy she narrated this! She really went above and beyond.",
+      role: ""
     },
     {
       id: 2,
       name: "Sarah C",
       quote: "Olivia King is incredible!! Omgosh She brings SO much emotion and life to an already amazing story. She is very talented and you can tell she loves what she does. Highly recommend anything by her! 💙💙",
+      role: ""
     },
     {
       id: 3,
       name: "Stephanie L",
       quote: "I loved hearing the different characters (and accents!) come to life in this beautiful production!",
+      role: ""
     },
     {
       id: 4,
       name: "A. Justus",
       quote: "From the beginning until the very end I could hardly stop listening.",
+      role: ""
     },
     {
       id: 5,
       name: "Stone",
       quote: "Narrator is fantastic as always. in fact, I only stumbled upon this series looking for more book she's read!",
+      role: ""
     },
     {
       id: 6,
       name: "Brooke F",
       quote: "Olivia is such a good narrator! This story is great, but she added to it with her narration!",
+      role: ""
     },
     {
       id: 7,
       name: "Colleen K",
       quote: "[Olivia] is the best female narrator I have ever listened to on audible. Her voice range and accents are nothing short of superb."
+      role: ""
     },
     {
       id: 8,
       name: "",
       quote: "Olivia king was incredible and perfectly suited for the heroine voice! I did not want to stop, not even to sleep. Will be listening to more from this author and narrator! Loved!!!!!"
+      role: ""
     },
     {
       id: 9,
       name: "Dupree F",
       quote: "Probably the best narration I've ever listen to."
+      role: ""
     },
     {
       id: 10,
       name: "Dee Z",
       quote: "Olivia King's narration is perfection."
+      role: ""
     }
   ];
 
