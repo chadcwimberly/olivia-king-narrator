@@ -10,10 +10,7 @@ const AudioDemos = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   
   const demos = [
-    { id: 1, title: "Fiction Narration", genre: "Fiction", duration: "1:24" },
-    { id: 2, title: "Mystery & Suspense", genre: "Mystery", duration: "0:58" },
-    { id: 3, title: "Character Voices", genre: "Fantasy", duration: "1:46" },
-    { id: 4, title: "Non-Fiction Sample", genre: "Non-Fiction", duration: "0:52" },
+    { id: 1, title: "Narration Demo Reel", genre: "", duration: "1:38" }
   ];
 
   const handleDemoClick = (id: number) => {
@@ -69,7 +66,7 @@ const AudioDemos = () => {
                     <h3 className="font-playfair font-bold">{demo.title}</h3>
                     <div className="flex items-center text-sm text-narrator-lightGray">
                       <BookOpen size={14} className="mr-1" />
-                      <span>{demo.genre}</span>
+                      {/* <span>{demo.genre}</span> */}
                       <span className="mx-2">•</span>
                       <span>{demo.duration}</span>
                     </div>
@@ -111,11 +108,11 @@ const AudioDemos = () => {
           ))}
         </div>
         
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <Button className="bg-narrator-purple hover:bg-narrator-purple/80 text-white">
             Request Custom Demo
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
