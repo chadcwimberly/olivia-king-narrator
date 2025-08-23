@@ -3,9 +3,9 @@ import { Mic, BookOpen, Headphones, Music } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: <BookOpen className="text-narrator-purple mb-2" size={32} />, value: '85+', label: 'Books Narrated' },
-    { icon: <Headphones className="text-narrator-purple mb-2" size={32} />, value: '12', label: 'Years Experience' },
-    { icon: <Music className="text-narrator-purple mb-2" size={32} />, value: '4.9', label: 'Avg. Rating' },
+    { icon: <BookOpen className="text-narrator-purple mb-2" size={32} />, value: '65+', label: 'Books Narrated' },
+    { icon: <Headphones className="text-narrator-purple mb-2" size={32} />, value: '5+', label: 'Years Experience' },
+    // { icon: <Music className="text-narrator-purple mb-2" size={32} />, value: '4.9', label: 'Avg. Rating' },
   ];
 
   return (
@@ -36,7 +36,11 @@ const About = () => {
             </p>
             
             <p className="mb-8 text-narrator-darkGray/90">
-              I specialize in fiction across multiple genres, from gripping mysteries and heartwarming romance to immersive fantasy worlds. My voice has been described as warm, versatile, and engaging - allowing me to adapt to the unique needs of each project while maintaining consistent quality.
+              I specialize in fiction across multiple genres, from heartwarming romance to immersive urban fantasy worlds. My voice has been described as versatile, and engaging – allowing me to adapt to the unique needs of each story and bring the characters to life.
+            </p>
+            
+            <p className="mb-8 text-narrator-darkGray/90">
+              Readers and authors love the breadth of accents I bring to my narration. Some of the accents I've done include: American English, Standard British English, Received Pronounciation, Scottish English, Welsh English, Cockney, Brummie, West Country, Northern Irish, Australian, Russian, German, French, Norwegian, South African, and more.
             </p>
             
             <div className="grid grid-cols-3 gap-6 text-center">

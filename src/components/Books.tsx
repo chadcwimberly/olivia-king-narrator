@@ -7,51 +7,91 @@ const Books = () => {
   const booksList = [
     {
       id: 1,
-      title: "The Silent Echo",
-      author: "Maria Winters",
-      genre: "Mystery",
+      title: "These Immortal Truths",
+      author: "R. Raeta",
+      genre: "Historical Fantasy",
       coverImage: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&q=80",
-      description: "A gripping thriller about a detective uncovering secrets in a small coastal town."
+      description: "A description"
     },
     {
       id: 2,
-      title: "Beyond the Horizon",
-      author: "Thomas Reed",
-      genre: "Science Fiction",
+      title: "Rowan",
+      author: "Robin D. Mahle and Elle Madison",
+      genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1531501410720-c8d437636169?w=600&q=80",
-      description: "An epic journey through space and time, exploring the boundaries of human existence."
+      description: ""
     },
     {
       id: 3,
-      title: "Whispers in the Wind",
-      author: "Eleanor James",
-      genre: "Romance",
+      title: "House of Beating Wings",
+      author: "Olivia Wildenstein",
+      genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1629992101753-56d196c8aabb?w=600&q=80",
-      description: "A heartwarming tale of love lost and found against the backdrop of the Irish countryside."
+      description: ""
     },
     {
       id: 4,
-      title: "Shadow's Edge",
-      author: "Jonathan Blake",
+      title: "Shadow of a Crown",
+      author: "M. Lynn and Melissa A. Craven",
       genre: "Fantasy",
       coverImage: "https://images.unsplash.com/photo-1518744386442-2d48ac47a7eb?w=600&q=80",
-      description: "In a world of magic and intrigue, a young apprentice discovers her true powers."
+      description: ""
     },
     {
       id: 5,
-      title: "The Forgotten Path",
-      author: "Sarah Chen",
-      genre: "Historical Fiction",
+    title: "Charlotte",
+    author: "Robin D. Mahle and Elle Madison",
+      genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&q=80",
-      description: "Set in 19th century China, a tale of family secrets spanning generations."
+      description: ""
     },
     {
       id: 6,
-      title: "Morning Light",
-      author: "David Wilson",
-      genre: "Contemporary Fiction",
+      title: "Sleep and Spirit",
+      author: "Courtney Thorne",
+      genre: "Romantasy",
       coverImage: "https://images.unsplash.com/photo-1589998059171-988d887df646?w=600&q=80",
-      description: "A poignant story about second chances and finding purpose in unexpected places."
+      description: ""
+    },
+    {
+      id: 7,
+      title: "Queens of the Fae",
+      author: "M. Lynn and Melissa A. Craven",
+      genre: "Romantasy",
+      coverImage: "",
+      description: ""
+    },
+    {
+      id: 8,
+      title: "Moonlight and Belladonna",
+      author: "Jae Dawson",
+      genre: "Romance",
+      coverImage: "",
+      description: ""
+    },
+    {
+      id: 9,
+      title: "Lochlann Deception",
+      author: "Robin D. Mahle and Elle Madison",
+      genre: "Romantasy",
+      coverImage: "",
+      description: ""
+    },
+    {
+      id: 10,
+      title: "Of Dreams and Shadows",
+      author: "Jesikah Sundin",
+      genre: "Romantasy",
+      coverImage: "",
+      description: ""
+    },
+    {
+      id: 11,
+      title: "Mythical Alliance",
+      author: "Claire Luana",
+      genre: "Urban Fantasy",
+      coverImage: "",
+      description: ""
     }
   ];
 
@@ -132,7 +172,7 @@ const Books = () => {
         </div>
         
         <div className="flex justify-center mt-8">
-          <Button className="bg-narrator-purple hover:bg-narrator-purple/80 text-white">
+          <Button className="bg-narrator-purple hover:bg-narrator-purple/80 text-white" ref="https://www.audible.com/search?ref=a_search_c3_lNarrator_1_5_1&searchNarrator=Olivia+King&page=1">
             View My Complete Portfolio
           </Button>
         </div>
