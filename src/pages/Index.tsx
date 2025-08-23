@@ -5,7 +5,6 @@ import About from '@/components/About';
 import Books from '@/components/Books';
 import AudioDemos from '@/components/AudioDemos';
 import Testimonials from '@/components/Testimonials';
-import Studio from '@/components/Studio';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
