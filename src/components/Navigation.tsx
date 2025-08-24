@@ -48,6 +48,7 @@ const Navigation = () => {
           <img
             src={oliviakinglogo}
             alt="Olivia King Logo"
+            className="header-logo"
           />
           {/* <img 
                 src="@/media/olivia-king-logo-w-extras.png" 
