@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-narrator-darkGray text-white py-10 px-6">
       <div className="container-wide">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center text-center">
           <div className="mb-6 md:mb-0">
             <a href="#hero" className="font-playfair text-xl font-bold">
               <img
@@ -20,7 +20,7 @@ const Footer = () => {
             <p className="text-sm text-white/60 mt-2">Professional Audiobook Narration</p>
           </div>
           
-          <div className="flex space-x-4">
+          {/* <div className="flex space-x-4">
             <a 
               href="#" 
               className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-narrator-purple transition-colors"
@@ -49,16 +49,16 @@ const Footer = () => {
             >
               <Linkedin size={18} />
             </a>
-          </div>
+          </div> */}
         </div>
         
         <div className="border-t border-white/10 mt-8 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-sm text-white/60">
               © {currentYear} Olivia King. All rights reserved.
             </p>
             
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            {/* <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-sm text-white/60 hover:text-white transition-colors">
                 Privacy Policy
               </a>
@@ -68,7 +68,7 @@ const Footer = () => {
               <a href="#" className="text-sm text-white/60 hover:text-white transition-colors">
                 Sitemap
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
