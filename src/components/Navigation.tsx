@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import oliviakinglogo from '@/media/olivia-king-logo-w-extras.png';
+import oliviakingmark from '@/media/olivia-king-logo-mark.png';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,8 +44,13 @@ const Navigation = () => {
       )}
     >
       <div className="container-wide flex items-center justify-between py-4">
-        <a href="#hero" className="font-playfair text-xl md:text-2xl font-bold text-narrator-darkGray">
-          Olivia<span className="text-narrator-purple">King</span>
+        <a href="#hero" className="">
+          {/* <img src="{oliviakinglogo}"> */}
+          <img 
+                src="@/media/olivia-king-logo-w-extras.png" 
+                alt="Olivia King Logo" 
+                className=""
+              />
         </a>
 
         {/* Desktop Navigation */}
