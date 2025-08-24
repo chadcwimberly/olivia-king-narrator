@@ -1,5 +1,6 @@
 
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import oliviakinglogo from '@/media/olivia-king-logo-horizontal.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#hero" className="font-playfair text-xl font-bold">
-              Olivia<span className="text-narrator-purple">King</span>
+              <img
+                src={oliviakinglogo}
+                alt="Olivia King Logo"
+                className="footer-logo"
+              />
             </a>
             <p className="text-sm text-white/60 mt-2">Professional Audiobook Narration</p>
           </div>

@@ -121,3 +121,8 @@
   height: auto;
   margin: 0 auto 8rem;
 }
+
+.footer-logo {
+  height: 1.75rem;
+  filter: invert(1);
+}
