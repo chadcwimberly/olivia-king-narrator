@@ -46,7 +46,7 @@ const Navigation = () => {
       <div className="container-wide flex items-center justify-between py-4">
         <a href="#hero" className="">
           <img
-            src="{oliviakinglogo}"
+            src={oliviakinglogo}
             alt="Olivia King Logo"
           />
           {/* <img 
