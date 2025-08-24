@@ -45,12 +45,15 @@ const Navigation = () => {
     >
       <div className="container-wide flex items-center justify-between py-4">
         <a href="#hero" className="">
-          {/* <img src="{oliviakinglogo}"> */}
-          <img 
+          <img
+            src="{oliviakinglogo}"
+            alt="Olivia King Logo"
+          />
+          {/* <img 
                 src="@/media/olivia-king-logo-w-extras.png" 
                 alt="Olivia King Logo" 
                 className=""
-              />
+              /> */}
         </a>
 
         {/* Desktop Navigation */}
