@@ -110,3 +110,8 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-narrator-purple;
 }
+
+
+.header-logo {
+  height: 6rem;
+}
