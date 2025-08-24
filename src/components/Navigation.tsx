@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import oliviakinglogo from '@/media/olivia-king-logo-w-extras.png';
+import oliviakinglogo from '@/media/olivia-king-logo-horizontal.png';
 import oliviakingmark from '@/media/olivia-king-logo-mark.png';
 
 const Navigation = () => {
