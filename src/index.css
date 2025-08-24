@@ -115,3 +115,9 @@
 .header-logo {
   height: 6rem;
 }
+
+.hero-logo {
+  width: 10rem;
+  height: auto;
+  margin-bottom: 2rem;
+}

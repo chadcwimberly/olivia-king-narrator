@@ -50,11 +50,6 @@ const Navigation = () => {
             alt="Olivia King Logo"
             className="header-logo"
           />
-          {/* <img 
-                src="@/media/olivia-king-logo-w-extras.png" 
-                alt="Olivia King Logo" 
-                className=""
-              /> */}
         </a>
 
         {/* Desktop Navigation */}

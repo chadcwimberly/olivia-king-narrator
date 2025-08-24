@@ -1,6 +1,7 @@
 
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import oliviakinglogo from '@/media/olivia-king-logo-w-extras.png';
 
 const Hero = () => {
   const handleScrollDown = () => {
@@ -12,6 +13,11 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070')] bg-cover bg-center opacity-10"></div>
       
       <div className="container-narrow text-center z-10">
+          <img
+            src={oliviakinglogo}
+            alt="Olivia King Logo"
+            className="hero-logo"
+          />
         <h1 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl mb-6">
           Bringing <span className="text-narrator-purple">Stories</span> To Life
         </h1>
