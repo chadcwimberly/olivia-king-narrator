@@ -14,10 +14,10 @@ import peachesAndHoneySample from '@/media/olivia-king-peaches-and-honey-sample.
 import rowanSample from '@/media/olivia-king-rowan-sample.mp3';
 
 // Import book covers
-import heartbeatsAndRosesCover from '@/media/audiobook-cover-charlotte.jpg';
+import heartbeatsAndRosesCover from '@/media/audiobook-cover-heartbeats-and-roses.jpg';
 import moonlightBelladonnaCover from '@/media/audiobook-cover-moonlight-and-belladonna.jpg';
 import rowanCover from '@/media/audiobook-cover-rowan.jpg';
-import sleepAndSpiritCover from '@/media/audiobook-cover-sleep-and-spirit.jpg';
+import kingdomOfCrowsCover from '@/media/audiobook-cover-house-of-beating-wings.jpg';
 import theseImmortalTruthsCover from '@/media/audiobook-cover-these-immortal-truths.jpg';
 
 // Import logo
@@ -34,48 +34,53 @@ const Listen = () => {
   const books = [
     {
       id: 1,
+      title: "Rowan",
+      author: "Various",
+      genre: "Romantasy",
+      duration: "Sample",
+      audioSrc: rowanSample,
+      coverImage: rowanCover,
+      description: "A reckless princess, captured by her enemy, must navigate dangerous politics and a forbidden love she never wanted in order to survive.",
+    },
+    {
+      id: 2,
+      title: "Peaches and Honey – These Immortal Truths",
+      author: "Various", 
+      genre: "Historical Fantasy",
+      duration: "Sample",
+      audioSrc: peachesAndHoneySample,
+      coverImage: theseImmortalTruthsCover,
+      description: "Both epic and intimate, These Immortal Truths is a powerful and romantic historical fantasy that explores not only what it means to live forever, but what it means to live fully.",
+    },
+    {
+      id: 3,
+      title: "Kingdom of Crows – House of Beating Wings",
+      author: "Various",
+      genre: "Romantasy",
+      duration: "Sample", 
+      audioSrc: kingdomOfCrowsSample,
+      coverImage: kingdomOfCrowsCover,
+      description: "A magicless halfling beloved by the prince but hated by the court is sent on an adventure by an oracle that releases a winged demon into the world. Is it really a demon, or is it her salvation?",
+    },
+    {
+      id: 4,
+      title: "Moonlight and Belladonna",
+      author: "Various",
+      genre: "Romance",
+      duration: "Sample",
+      audioSrc: moonlightBelladonnaSample,
+      coverImage: moonlightBelladonnaCover,
+      description: "Will a high school music teacher and an indie rock star find their harmony in this small-town holiday romance?",
+    },
+    {
+      id: 5,
       title: "Heartbeats and Roses",
       author: "Charlotte",
       genre: "Romance",
       duration: "Sample",
       audioSrc: heartbeatsAndRosesSample,
       coverImage: heartbeatsAndRosesCover,
-    },
-    {
-      id: 2,
-      title: "Kingdom of Crows",
-      author: "Various",
-      genre: "Fantasy",
-      duration: "Sample", 
-      audioSrc: kingdomOfCrowsSample,
-      coverImage: sleepAndSpiritCover,
-    },
-    {
-      id: 3,
-      title: "Moonlight and Belladonna",
-      author: "Various",
-      genre: "Fantasy",
-      duration: "Sample",
-      audioSrc: moonlightBelladonnaSample,
-      coverImage: moonlightBelladonnaCover,
-    },
-    {
-      id: 4,
-      title: "Peaches and Honey",
-      author: "Various", 
-      genre: "Romance",
-      duration: "Sample",
-      audioSrc: peachesAndHoneySample,
-      coverImage: theseImmortalTruthsCover,
-    },
-    {
-      id: 5,
-      title: "Rowan",
-      author: "Various",
-      genre: "Fantasy",
-      duration: "Sample",
-      audioSrc: rowanSample,
-      coverImage: rowanCover,
+      description: "Will old high school crushes find a second chance at love in this small-town holiday romance?",
     },
   ];
 
@@ -223,8 +228,11 @@ const Listen = () => {
                           <h3 className="text-xl font-playfair font-bold text-narrator-darkGray mb-1">
                             {book.title}
                           </h3>
+                          <span className="px-2 py-1 bg-narrator-purple/10 text-narrator-purple text-xs rounded">
+                            {book.genre}
+                          </span>
                           <p className="text-narrator-lightGray text-sm mb-2">
-                            {book.genre} • Audio Sample
+                            {book.description}
                           </p>
                         </div>
                         
