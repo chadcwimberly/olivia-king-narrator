@@ -1,7 +1,7 @@
 
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import oliviakinglogo from '@/media/olivia-king-logo-w-extras.png';
+import oliviakinglogo from '@/media/olivia-king-logo-vertical.png';
 
 const Hero = () => {
   const handleScrollDown = () => {
