@@ -186,7 +186,7 @@ const Listen = () => {
 
   return (
     <div className="min-h-screen bg-narrator-cream">
-      <Navigation />
+      {/* <Navigation /> */}
       
       <main className="pt-20">
         <section className="section bg-narrator-cream">
