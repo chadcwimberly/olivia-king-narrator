@@ -44,7 +44,7 @@ const Listen = () => {
     },
     {
       id: 2,
-      title: "Peaches and Honey – These Immortal Truths",
+      title: "These Immortal Truths (Peaches and Honey)",
       author: "Various", 
       genre: "Historical Fantasy",
       duration: "Sample",
@@ -54,7 +54,7 @@ const Listen = () => {
     },
     {
       id: 3,
-      title: "Kingdom of Crows – House of Beating Wings",
+      title: "House of Beating Wings (Kingdom of Crows)",
       author: "Various",
       genre: "Romantasy",
       duration: "Sample", 
