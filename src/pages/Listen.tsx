@@ -208,7 +208,7 @@ const Listen = () => {
             </div>
 
             {/* Audio Players */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
               {books.map((book) => (
                 <div key={book.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                   <div className="flex flex-col md:flex-row">
