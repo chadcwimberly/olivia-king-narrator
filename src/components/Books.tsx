@@ -34,6 +34,7 @@ const Books = () => {
       genre: "Romantasy",
       coverImage: rowanCover,
       description: "A reckless princess, captured by her enemy, must navigate dangerous politics and a forbidden love she never wanted in order to survive.",
+      bestseller: "#1 bestseller",
       ref: "https://www.audible.com/pd/Rowan-Audiobook/B0BS1VBBV8"
     },
     {
@@ -162,6 +163,9 @@ const Books = () => {
                         </span>
                       </div>
                       <p className="text-sm text-narrator-lightGray mb-3">By {book.author}</p>
+                      {book.bestseller && (
+                        <p className="text-narrator-purple font-bold text-sm mb-2">{book.bestseller}</p>
+                      )}
                       <p className="text-narrator-darkGray/80 text-sm mb-4">{book.description}</p>
                       <div className="flex items-center justify-between">
                         <Button 
