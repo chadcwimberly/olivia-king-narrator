@@ -18,8 +18,8 @@ const Hero = () => {
             alt="Olivia King Logo"
             className="hero-logo"
           />
-        <h1 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl mb-6">
-          Bringing <span className="text-narrator-purple">Stories</span> To Life
+        <h1 className="font-raleway font-thin text-4xl md:text-5xl lg:text-6xl mb-6 text-black">
+          Bringing <span className="font-bold">Stories</span> to Life
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-narrator-darkGray/80">
           Professional audiobook narration with a voice that captivates, engages, and transports listeners into the heart of every story.
