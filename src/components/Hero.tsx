@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen bg-gradient-to-b from-narrator-cream to-narrator-beige flex items-center justify-center px-6">
-      <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[url('/lovable-uploads/bea9acfc-fc85-48d6-9f4c-dd26ac8d5b06.png')] bg-cover bg-center opacity-10"></div>
       
       <div className="container-narrow text-center z-10">
           <img
