@@ -102,9 +102,9 @@ const Testimonials = () => {
               >
                 <div className="flex flex-col items-center text-center">
                   <div>
-                    <h4 className="font-playfair font-bold text-lg">{testimonial.quote}</h4>
+                    <h4 className="font-playfair font-light text-lg">{testimonial.quote}</h4>
                   </div>
-                  <p className="italic text-narrator-darkGray/80 mb-6 max-w-2xl">
+                  <p className="font-bold text-narrator-darkGray/80 mb-6 max-w-2xl">
                     "{testimonial.name}"
                   </p>
                 </div>
