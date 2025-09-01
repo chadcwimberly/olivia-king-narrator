@@ -44,7 +44,7 @@ const Navigation = () => {
         isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       )}
     >
-      <div className="container-wide flex items-center justify-between py-4">
+      <div className="container-wide flex items-center justify-between p-4">
         <a href="#hero" className="">
           <img
             src="/lovable-uploads/accd40f4-9bfe-4e9f-8972-2db9cebd128f.png"
