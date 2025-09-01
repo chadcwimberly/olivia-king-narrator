@@ -198,7 +198,7 @@ const Listen = () => {
                 alt="Olivia King Logo"
                 className="h-16 mx-auto mb-6"
               />
-              <h1 className="text-4xl md:text-5xl font-playfair font-bold text-narrator-darkGray mb-4">
+              <h1 className="text-4xl md:text-5xl font-playfair font-thin text-narrator-darkGray mb-4">
                 Listen to Olivia King
               </h1>
               <p className="text-narrator-darkGray/80 text-lg max-w-2xl mx-auto">
