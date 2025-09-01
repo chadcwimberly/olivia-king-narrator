@@ -18,8 +18,8 @@ const About = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-narrator-purple rounded-lg"></div>
               <img 
-                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=800&q=80" 
-                alt="Professional narrator in studio" 
+                src="/lovable-uploads/a6e750eb-74c8-4dbc-b758-2e24b1ff93cb.png" 
+                alt="Olivia King - Professional Audiobook Narrator" 
                 className="rounded-lg w-full h-auto object-cover shadow-lg"
               />
             </div>
