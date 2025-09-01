@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Bookmark, ExternalLink } from 'lucide-react';
 
@@ -122,6 +122,39 @@ const Books = () => {
 
   const [startIndex, setStartIndex] = useState(0);
   const visibleBooks = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+  
+  // Touch/swipe functionality
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const [isSwiping, setIsSwiping] = useState(false);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+    setIsSwiping(true);
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!isSwiping) return;
+    
+    const swipeDistance = touchStartX.current - touchEndX.current;
+    const minSwipeDistance = 50; // Minimum distance for a swipe to be registered
+
+    if (Math.abs(swipeDistance) > minSwipeDistance) {
+      if (swipeDistance > 0) {
+        // Swiped left - go to next
+        nextBooks();
+      } else {
+        // Swiped right - go to previous
+        prevBooks();
+      }
+    }
+    
+    setIsSwiping(false);
+  };
 
   const nextBooks = () => {
     setStartIndex((prev) => (prev + visibleBooks >= booksList.length ? 0 : prev + visibleBooks));
@@ -141,6 +174,9 @@ const Books = () => {
             <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${startIndex * (100 / visibleBooks)}%)` }}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
             >
               {booksList.map((book) => (
                 <div 
