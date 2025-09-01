@@ -112,7 +112,7 @@ const Testimonials = () => {
             ))}
           </div>
           
-          <div className="flex justify-center mt-8 space-x-4">
+          <div className="flex justify-center items-center mt-8 space-x-4">
             <Button 
               variant="outline" 
               size="icon"
