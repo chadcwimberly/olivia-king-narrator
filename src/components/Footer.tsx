@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <a href="#hero" className="font-playfair text-xl font-bold">
               <img
-                src="/lovable-uploads/e4a9c8d7-68c5-4228-8109-aa3023968eed.png"
+                src={oliviakinglogo}
                 alt="Olivia King Logo"
                 className="footer-logo mx-auto h-12"
               />
