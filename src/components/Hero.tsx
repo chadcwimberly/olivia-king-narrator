@@ -38,7 +38,7 @@ const Hero = () => {
           variant="ghost" 
           size="icon"
           onClick={handleScrollDown}
-          className="rounded-full border border-narrator-purple/20"
+          className="rounded-full border border-narrator-purple/20 bg-white"
           aria-label="Scroll down"
         >
           <ArrowDown className="text-narrator-purple" />
