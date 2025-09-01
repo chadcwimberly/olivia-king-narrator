@@ -72,7 +72,7 @@ export default {
                 }
 			},
 			fontFamily: {
-                playfair: ['Playfair Display', 'serif'],
+                raleway: ['Raleway', 'sans-serif'],
                 lato: ['Lato', 'sans-serif']
             },
 			borderRadius: {

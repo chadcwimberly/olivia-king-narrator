@@ -60,10 +60,8 @@ const Navigation = () => {
               key={item.name}
               href={item.href}
               onClick={(e) => {
-                if (!item.isRoute) {
-                  e.preventDefault();
-                  handleNavClick(item.href);
-                }
+                e.preventDefault();
+                handleNavClick(item.href);
               }}
               className="text-narrator-darkGray hover:text-narrator-purple transition-colors font-medium"
             >
@@ -92,12 +90,9 @@ const Navigation = () => {
               key={item.name}
               href={item.href}
               onClick={(e) => {
-                if (!item.isRoute) {
-                  e.preventDefault();
-                  handleNavClick(item.href);
-                } else {
-                  setIsOpen(false);
-                }
+                e.preventDefault();
+                handleNavClick(item.href);
+                setIsOpen(false);
               }}
               className="block py-2 text-narrator-darkGray hover:text-narrator-purple transition-colors"
             >
