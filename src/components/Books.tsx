@@ -148,7 +148,7 @@ const Books = () => {
                   className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-3 mb-6"
                 >
                   <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                    <div className="h-64 overflow-hidden">
+                    <div className="aspect-square overflow-hidden">
                       <img 
                         src={book.coverImage} 
                         alt={book.title} 
