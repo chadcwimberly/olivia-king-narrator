@@ -66,7 +66,7 @@ export default {
                 narrator: {
                     cream: '#F8F4EA',
                     beige: '#E1D9D1',
-                    purple: '#ffc300',
+                    purple: '#e2ad00',
                     darkGray: '#222222',
                     lightGray: '#8A898C'
                 }
