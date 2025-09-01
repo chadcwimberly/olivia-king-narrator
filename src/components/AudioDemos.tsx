@@ -89,7 +89,7 @@ const AudioDemos = () => {
   return (
     <section id="demos" className="section bg-white">
       <div className="container-narrow">
-        <h2 className="section-title">Audio Demos</h2>
+        <h2 className="section-title">Audio Demo</h2>
         
         <p className="text-narrator-darkGray/80 mb-10 max-w-2xl">
           Listen to samples of my narration across different genres. Each demo showcases my versatility and ability to bring characters and stories to life.
