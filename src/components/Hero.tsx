@@ -38,10 +38,10 @@ const Hero = () => {
           variant="ghost" 
           size="icon"
           onClick={handleScrollDown}
-          className="rounded-full border border-narrator-purple/20 bg-white"
+          className="rounded-full border border-narrator-purple/20 bg-white group hover:bg-narrator-purple"
           aria-label="Scroll down"
         >
-          <ArrowDown className="text-narrator-purple" />
+          <ArrowDown className="text-narrator-purple group-hover:text-white transition-colors" />
         </Button>
       </div>
     </section>
