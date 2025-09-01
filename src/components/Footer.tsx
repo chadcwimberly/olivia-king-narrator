@@ -14,7 +14,7 @@ const Footer = () => {
               <img
                 src={oliviakinglogo}
                 alt="Olivia King Logo"
-                className="footer-logo mx-auto h-8"
+                className="footer-logo mx-auto h-12"
               />
             </a>
             <p className="text-sm text-white/60 mt-2">Professional Audiobook Narration</p>
