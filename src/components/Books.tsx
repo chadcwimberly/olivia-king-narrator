@@ -34,7 +34,7 @@ const Books = () => {
       genre: "Romantasy",
       coverImage: rowanCover,
       description: "A reckless princess, captured by her enemy, must navigate dangerous politics and a forbidden love she never wanted in order to survive.",
-      bestseller: "#1 bestseller",
+      bestseller: "#1 Bestseller on Audible",
       ref: "https://www.audible.com/pd/Rowan-Audiobook/B0BS1VBBV8"
     },
     {
