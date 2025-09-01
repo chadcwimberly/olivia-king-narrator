@@ -117,7 +117,7 @@ const Testimonials = () => {
               variant="outline" 
               size="icon"
               onClick={prevTestimonial}
-              className="border-narrator-purple/30 text-narrator-purple hover:bg-narrator-purple/10"
+              className="border-narrator-purple text-narrator-purple hover:bg-narrator-purple hover:text-white"
               aria-label="Previous testimonial"
             >
               <ChevronLeft size={18} />
@@ -143,7 +143,7 @@ const Testimonials = () => {
               variant="outline" 
               size="icon"
               onClick={nextTestimonial}
-              className="border-narrator-purple/30 text-narrator-purple hover:bg-narrator-purple/10"
+              className="border-narrator-purple text-narrator-purple hover:bg-narrator-purple hover:text-white"
               aria-label="Next testimonial"
             >
               <ChevronRight size={18} />
