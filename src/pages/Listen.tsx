@@ -258,21 +258,13 @@ const Listen = () => {
                       {/* Progress Bar */}
                       {activeBook === book.id && (
                         <div className="mb-4">
-                          <div 
-                            className="bg-narrator-beige/50 h-2 rounded-full w-full overflow-hidden cursor-pointer"
-                            onClick={(e) => {
-                              const rect = e.currentTarget.getBoundingClientRect();
-                              const x = e.clientX - rect.left;
-                              const percentage = (x / rect.width) * 100;
-                              handleProgressChange([percentage]);
-                            }}
-                          >
-                            <div 
-                              className="h-full bg-narrator-purple rounded-full transition-all"
-                              style={{ width: duration ? `${(currentTime / duration) * 100}%` : '0%' }}
-                            />
-                          </div>
-                          
+                          <Slider
+                            value={[duration ? (currentTime / duration) * 100 : 0]}
+                            onValueChange={handleProgressChange}
+                            max={100}
+                            step={0.1}
+                            className="w-full"
+                          />
                           <div className="mt-2 text-xs text-narrator-lightGray flex justify-between">
                             <span>{formatTime(currentTime)}</span>
                             <span>{formatTime(duration || 0)}</span>
