@@ -98,9 +98,10 @@ const Listen = () => {
       
       const updateDuration = () => {
         if (activeBook === book.id) {
-          setDuration(audio.duration);
+          setDuration(audio.duration || 0);
         }
       };
+
       
       const handleEnded = () => {
         if (activeBook === book.id) {
