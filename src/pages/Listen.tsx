@@ -160,7 +160,7 @@ const Listen = () => {
       setActiveBook(id);
       audio.currentTime = 0;
       setCurrentTime(0);
-      setDuration(audio.duration || 0);
+      if (!isNaN(audio.duration)) setDuration(audio.duration);
       audio.play();
       setIsPlaying(true);
     }
@@ -168,11 +168,14 @@ const Listen = () => {
 
   const handleProgressChange = (value: number[]) => {
     const audio = activeBook ? audioRefs.current[activeBook] : null;
-    if (!audio || !duration) return;
+    if (!audio) return;
+    const dur = duration || audio.duration;
+    if (!dur || isNaN(dur)) return;
 
-    const newTime = (value[0] / 100) * duration;
+    const newTime = (value[0] / 100) * dur;
     audio.currentTime = newTime;
     setCurrentTime(newTime);
+    if (!duration) setDuration(dur);
   };
 
   const handleVolumeChange = (value: number[]) => {
