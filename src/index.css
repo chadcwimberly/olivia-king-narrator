@@ -49,6 +49,58 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .dark {
+    --background: 240 6% 8%;
+    --foreground: 40 30% 92%;
+
+    --card: 240 6% 11%;
+    --card-foreground: 40 30% 92%;
+
+    --popover: 240 6% 11%;
+    --popover-foreground: 40 30% 92%;
+
+    --primary: 46 100% 50%;
+    --primary-foreground: 240 6% 8%;
+
+    --secondary: 240 5% 16%;
+    --secondary-foreground: 40 30% 92%;
+
+    --muted: 240 5% 16%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 46 100% 50%;
+    --accent-foreground: 240 6% 8%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 40 30% 92%;
+
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+    --ring: 46 100% 50%;
+  }
+}
+
+/* Dark-mode overrides for the site's hardcoded utility usage.
+   Keeps components untouched while swapping surface + text colors. */
+@layer utilities {
+  .dark body {
+    background-color: hsl(240 6% 8%);
+    color: hsl(40 30% 92%);
+  }
+  .dark .bg-white { background-color: hsl(240 6% 11%) !important; }
+  .dark .bg-white\/90 { background-color: hsl(240 6% 11% / 0.85) !important; }
+  .dark .bg-narrator-cream { background-color: hsl(240 6% 8%) !important; }
+  .dark .bg-narrator-beige\/40 { background-color: hsl(240 5% 13% / 0.6) !important; }
+  .dark .from-narrator-cream { --tw-gradient-from: hsl(240 6% 8%) var(--tw-gradient-from-position) !important; --tw-gradient-to: hsl(240 6% 8% / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+  .dark .to-narrator-beige { --tw-gradient-to: hsl(240 5% 14%) var(--tw-gradient-to-position) !important; }
+  .dark .text-black { color: hsl(40 30% 92%) !important; }
+  .dark .text-narrator-darkGray { color: hsl(40 30% 92%) !important; }
+  .dark .text-narrator-darkGray\/80 { color: hsl(40 30% 92% / 0.8) !important; }
+  .dark .text-narrator-darkGray\/90 { color: hsl(40 30% 92% / 0.9) !important; }
+  .dark .text-narrator-lightGray { color: hsl(240 5% 70%) !important; }
+  .dark .border-narrator-purple\/20 { border-color: hsl(46 100% 50% / 0.4) !important; }
+  .dark ::-webkit-scrollbar-track { background-color: hsl(240 6% 8%); }
 }
 
 @layer base {
