@@ -141,12 +141,22 @@ const Listen = () => {
     });
   };
 
-  const handleBookClick = (id: number) => {
+  const handleExpand = (id: number) => {
+    if (activeBook === id) return;
+    const audio = audioRefs.current[id];
+    if (!audio) return;
+    pauseAllOtherAudios(id);
+    setActiveBook(id);
+    setIsPlaying(false);
+    setCurrentTime(0);
+    if (!isNaN(audio.duration)) setDuration(audio.duration);
+  };
+
+  const handlePlayClick = (id: number) => {
     const audio = audioRefs.current[id];
     if (!audio) return;
 
     if (activeBook === id) {
-      // Same book - toggle play/pause
       if (isPlaying) {
         audio.pause();
         setIsPlaying(false);
@@ -155,7 +165,6 @@ const Listen = () => {
         setIsPlaying(true);
       }
     } else {
-      // Different book - pause all others and start this one
       pauseAllOtherAudios(id);
       setActiveBook(id);
       audio.currentTime = 0;
@@ -214,7 +223,11 @@ const Listen = () => {
             {/* Audio Players */}
             <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
               {books.map((book) => (
-                <div key={book.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div
+                  key={book.id}
+                  className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+                  onClick={() => handleExpand(book.id)}
+                >
                   <div className="flex flex-col md:flex-row">
                     {/* Book Cover */}
                     <div className="md:w-48 h-48 md:h-auto flex-shrink-0">
@@ -241,7 +254,10 @@ const Listen = () => {
                         </div>
                         
                         <Button
-                          onClick={() => handleBookClick(book.id)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handlePlayClick(book.id);
+                          }}
                           variant="outline"
                           size="icon"
                           className={cn(
@@ -261,7 +277,7 @@ const Listen = () => {
                       
                       {/* Progress Bar */}
                       {activeBook === book.id && (
-                        <div className="mb-4">
+                        <div className="mb-4" onClick={(e) => e.stopPropagation()}>
                           <Slider
                             value={[duration ? (currentTime / duration) * 100 : 0]}
                             onValueChange={handleProgressChange}
@@ -278,7 +294,7 @@ const Listen = () => {
                       
                       {/* Volume Control */}
                       {activeBook === book.id && (
-                        <div className="flex items-center">
+                        <div className="flex items-center" onClick={(e) => e.stopPropagation()}>
                           <Volume2 size={16} className="text-narrator-lightGray mr-3" />
                           <Slider
                             value={[volume]}
