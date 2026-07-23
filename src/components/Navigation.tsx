@@ -56,6 +56,7 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
+          <ThemeToggle />
           {navItems.map((item) => (
             <a
               key={item.name}
@@ -69,7 +70,6 @@ const Navigation = () => {
               {item.name}
             </a>
           ))}
-          <ThemeToggle />
         </nav>
 
         {/* Mobile: theme toggle + menu */}
