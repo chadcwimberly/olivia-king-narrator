@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import ThemeToggle from '@/components/ThemeToggle';
 import oliviakinglogo from '@/media/olivia-king-logo-horizontal.png';
 import oliviakingmark from '@/media/olivia-king-logo-mark.png';
 
@@ -68,18 +69,21 @@ const Navigation = () => {
               {item.name}
             </a>
           ))}
+          <ThemeToggle />
         </nav>
 
-        {/* Mobile Navigation Toggle */}
-        <Button 
-          variant="ghost" 
-          size="icon"
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X /> : <Menu />}
-        </Button>
+        {/* Mobile: theme toggle + menu */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X /> : <Menu />}
+          </Button>
+        </div>
       </div>
 
       {/* Mobile Navigation Menu */}
