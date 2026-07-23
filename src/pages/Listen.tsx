@@ -141,12 +141,22 @@ const Listen = () => {
     });
   };
 
-  const handleBookClick = (id: number) => {
+  const handleExpand = (id: number) => {
+    if (activeBook === id) return;
+    const audio = audioRefs.current[id];
+    if (!audio) return;
+    pauseAllOtherAudios(id);
+    setActiveBook(id);
+    setIsPlaying(false);
+    setCurrentTime(0);
+    if (!isNaN(audio.duration)) setDuration(audio.duration);
+  };
+
+  const handlePlayClick = (id: number) => {
     const audio = audioRefs.current[id];
     if (!audio) return;
 
     if (activeBook === id) {
-      // Same book - toggle play/pause
       if (isPlaying) {
         audio.pause();
         setIsPlaying(false);
@@ -155,7 +165,6 @@ const Listen = () => {
         setIsPlaying(true);
       }
     } else {
-      // Different book - pause all others and start this one
       pauseAllOtherAudios(id);
       setActiveBook(id);
       audio.currentTime = 0;
