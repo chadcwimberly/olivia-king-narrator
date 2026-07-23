@@ -90,6 +90,7 @@
   }
   .dark .hero-logo { filter: invert(1); }
   .dark .header-logo { filter: invert(1); }
+  .dark .listen-logo { filter: invert(1); }
   .dark .bg-narrator-purple.text-white,
   .dark .bg-primary.text-white { color: #0a0a0a !important; }
   .dark .bg-white { background-color: hsl(240 6% 11%) !important; }
