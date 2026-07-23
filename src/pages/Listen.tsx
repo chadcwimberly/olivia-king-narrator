@@ -200,7 +200,7 @@ const Listen = () => {
               <img
                 src={oliviaKingLogo}
                 alt="Olivia King Logo"
-                className="h-16 mx-auto mb-6"
+                className="listen-logo h-16 mx-auto mb-6"
               />
               <h1 className="text-4xl md:text-5xl font-playfair font-thin text-narrator-darkGray mb-4">
                 Listen to Olivia King
