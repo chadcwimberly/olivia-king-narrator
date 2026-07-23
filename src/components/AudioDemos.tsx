@@ -111,18 +111,22 @@ const AudioDemos = () => {
             <div 
               key={demo.id}
               className={cn(
-                "p-5 rounded-lg transition-all",
+                "p-5 rounded-lg transition-all cursor-pointer",
                 activeDemo === demo.id 
                   ? "bg-narrator-purple/10 border border-narrator-purple" 
-                  : "bg-narrator-cream hover:bg-narrator-beige cursor-pointer"
+                  : "bg-narrator-cream hover:bg-narrator-beige"
               )}
-              onClick={() => handleDemoClick(demo.id)}
+              onClick={() => handleExpand(demo.id)}
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <Button
                     variant="outline"
                     size="icon"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handlePlayClick(demo.id);
+                    }}
                     className={cn(
                       "mr-4 h-10 w-10 rounded-full border-2",
                       activeDemo === demo.id && isPlaying
@@ -149,7 +153,7 @@ const AudioDemos = () => {
                 </div>
                 
                 {activeDemo === demo.id && (
-                  <div className="hidden md:flex items-center w-1/3">
+                  <div className="hidden md:flex items-center w-1/3" onClick={(e) => e.stopPropagation()}>
                     <Volume2 size={16} className="text-narrator-lightGray mr-2" />
                     <Slider
                       value={[volume]}
