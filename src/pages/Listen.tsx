@@ -223,7 +223,11 @@ const Listen = () => {
             {/* Audio Players */}
             <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
               {books.map((book) => (
-                <div key={book.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div
+                  key={book.id}
+                  className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+                  onClick={() => handleExpand(book.id)}
+                >
                   <div className="flex flex-col md:flex-row">
                     {/* Book Cover */}
                     <div className="md:w-48 h-48 md:h-auto flex-shrink-0">
@@ -250,7 +254,10 @@ const Listen = () => {
                         </div>
                         
                         <Button
-                          onClick={() => handleBookClick(book.id)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handlePlayClick(book.id);
+                          }}
                           variant="outline"
                           size="icon"
                           className={cn(
