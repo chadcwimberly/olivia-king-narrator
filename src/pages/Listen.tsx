@@ -104,6 +104,7 @@ const Listen = () => {
 
       
       const handleEnded = () => {
+        audio.currentTime = 0;
         if (activeBook === book.id) {
           setIsPlaying(false);
           setCurrentTime(0);
@@ -141,15 +142,19 @@ const Listen = () => {
     });
   };
 
+  const syncStateFromAudio = (audio: HTMLAudioElement) => {
+    setCurrentTime(audio.currentTime || 0);
+    if (!isNaN(audio.duration)) setDuration(audio.duration);
+  };
+
   const handleExpand = (id: number) => {
     if (activeBook === id) return;
     const audio = audioRefs.current[id];
     if (!audio) return;
     pauseAllOtherAudios(id);
     setActiveBook(id);
-    setIsPlaying(false);
-    setCurrentTime(0);
-    if (!isNaN(audio.duration)) setDuration(audio.duration);
+    setIsPlaying(!audio.paused);
+    syncStateFromAudio(audio);
   };
 
   const handlePlayClick = (id: number) => {
@@ -167,9 +172,7 @@ const Listen = () => {
     } else {
       pauseAllOtherAudios(id);
       setActiveBook(id);
-      audio.currentTime = 0;
-      setCurrentTime(0);
-      if (!isNaN(audio.duration)) setDuration(audio.duration);
+      syncStateFromAudio(audio);
       audio.play();
       setIsPlaying(true);
     }
