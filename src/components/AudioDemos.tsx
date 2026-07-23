@@ -47,7 +47,16 @@ const AudioDemos = () => {
     audio.volume = volume / 100;
   }, [volume]);
 
-  const handleDemoClick = (id: number) => {
+  const handleExpand = (id: number) => {
+    if (activeDemo === id) return;
+    const audio = audioRef.current;
+    if (!audio) return;
+    setActiveDemo(id);
+    setIsPlaying(false);
+    setCurrentTime(0);
+  };
+
+  const handlePlayClick = (id: number) => {
     const audio = audioRef.current;
     if (!audio) return;
 
