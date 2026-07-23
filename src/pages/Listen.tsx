@@ -277,7 +277,7 @@ const Listen = () => {
                       
                       {/* Progress Bar */}
                       {activeBook === book.id && (
-                        <div className="mb-4">
+                        <div className="mb-4" onClick={(e) => e.stopPropagation()}>
                           <Slider
                             value={[duration ? (currentTime / duration) * 100 : 0]}
                             onValueChange={handleProgressChange}
@@ -294,7 +294,7 @@ const Listen = () => {
                       
                       {/* Volume Control */}
                       {activeBook === book.id && (
-                        <div className="flex items-center">
+                        <div className="flex items-center" onClick={(e) => e.stopPropagation()}>
                           <Volume2 size={16} className="text-narrator-lightGray mr-3" />
                           <Slider
                             value={[volume]}
